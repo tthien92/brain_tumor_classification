@@ -14,7 +14,9 @@ cross-validation indices are also provided"
 ## Table of Contents 
 
 Data_Format.ipynb - Extract image and label data from .mat files into pandas dataframe.
+
 Data_Exploration - Exploratory data analysis and balancing classes
+
 Data_Modeling - Creating and Fine-Tuning neural network for tumor classification & identification
 
 ## Additional Notes
