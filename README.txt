@@ -1,10 +1,23 @@
-This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images
+# Summary
+
+This project seeks to classify MRI images of brain tumors taken from Southern Medical University in Guangzhou, China. As stated by the owner of this data, Jun Cheng:
+
+" This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images
 from 233 patients with three kinds of brain tumor: meningioma (708 slices), 
 glioma (1426 slices), and pituitary tumor (930 slices). Due to the file size
 limit of repository, we split the whole dataset into 4 subsets, and achive 
 them in 4 .zip files with each .zip file containing 766 slices.The 5-fold
-cross-validation indices are also provided.
+cross-validation indices are also provided"
 
+
+
+## Table of Contents 
+
+Data_Format.ipynb - Extract image and label data from .mat files into pandas dataframe.
+Data_Exploration - Exploratory data analysis and balancing classes
+Data_Modeling - Creating and Fine-Tuning neural network for tumor classification & identification
+
+## Additional Notes
 -----
 This data is organized in matlab data format (.mat file). Each file stores a struct
 containing the following fields for an image:
@@ -18,17 +31,5 @@ cjdata.tumorBorder: a vector storing the coordinates of discrete points on tumor
 		binary image of tumor mask.
 cjdata.tumorMask: a binary image with 1s indicating tumor region
 
------
-This data was used in the following paper:
-1. Cheng, Jun, et al. "Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation
-and Partition." PloS one 10.10 (2015).
-2. Cheng, Jun, et al. "Retrieval of Brain Tumors by Adaptive Spatial Pooling and Fisher Vector 
-Representation." PloS one 11.6 (2016). Matlab source codes are available on github 
-https://github.com/chengjun583/brainTumorRetrieval
 
------
-Jun Cheng
-School of Biomedical Engineering
-Southern Medical University, Guangzhou, China
-Email: chengjun583@qq.com
 
