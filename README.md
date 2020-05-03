@@ -9,7 +9,7 @@ limit of repository, we split the whole dataset into 4 subsets, and achive
 them in 4 .zip files with each .zip file containing 766 slices.The 5-fold
 cross-validation indices are also provided"
 
-
+Dataset: https://figshare.com/articles/brain_tumor_dataset/1512427
 
 ## Table of Contents 
 
